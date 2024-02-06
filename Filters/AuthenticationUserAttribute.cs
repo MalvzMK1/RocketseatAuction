@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
+using RocketseatAuction.Repositories;
 
 namespace RocketseatAuction.Filters
 {
@@ -8,6 +9,10 @@ namespace RocketseatAuction.Filters
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             string token = GetTokenOnRequest(context.HttpContext);
+
+            var repository = new RocketseatAuctionDbContext();
+
+            repository.Users.
         }
 
         private string GetTokenOnRequest(HttpContext context)
