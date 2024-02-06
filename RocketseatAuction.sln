@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketseatAuction", "RocketseatAuction.csproj", "{1FE1CC7D-FEF0-4EF5-9973-104D7A577B2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A8F96518-3720-495C-8209-2238D8541998}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FE1CC7D-FEF0-4EF5-9973-104D7A577B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE1CC7D-FEF0-4EF5-9973-104D7A577B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE1CC7D-FEF0-4EF5-9973-104D7A577B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE1CC7D-FEF0-4EF5-9973-104D7A577B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FE1CC7D-FEF0-4EF5-9973-104D7A577B2D} = {A8F96518-3720-495C-8209-2238D8541998}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01ED38A9-DCCA-4D17-AF33-A9DD9540BF7C}
+	EndGlobalSection
+EndGlobal
