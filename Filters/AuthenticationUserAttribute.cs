@@ -14,6 +14,12 @@ namespace RocketseatAuction.Filters
         {
             var authorization = context.Request.Headers.Authorization.ToString();
 
+            if (string.IsNullOrEmpty(authorization))
+                throw new Exception("No authorization token was provided");
+
+            if (authorization.Length < 7)
+                throw new Exception("The provided authorization token is ivalid");
+
             return authorization["Bearer ".Length..];
         }
     }
