@@ -12,7 +12,7 @@ namespace RocketseatAuction.Controllers
         [HttpGet]
         [ProducesResponseType(typeof(Auction), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public IActionResult getCurrentAuction()
+        public IActionResult GetCurrentAuction()
         {
             var useCase = new GetCurrentAuctionsUseCase();
 

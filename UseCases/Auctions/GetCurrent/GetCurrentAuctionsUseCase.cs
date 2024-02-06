@@ -8,12 +8,14 @@ namespace RocketseatAuction.UseCases.Auctions.GetCurrent
     {
         private RocketseatAuctionDbContext repository = new RocketseatAuctionDbContext();
 
-        public Auction Execute()
+        public Auction? Execute()
         {
+            DateTime today = new DateTime(2024, 01, 21);
+
             return repository
                 .Auctions
                 .Include((auction) => auction.Items)
-                .First();
+                .FirstOrDefault((auction) => today >= auction.Starts && today <= auction.Ends);
         }
     }
 }
