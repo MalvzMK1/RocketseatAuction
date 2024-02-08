@@ -1,4 +1,4 @@
-﻿namespace RocketseatAuction.Communication.Requests
+﻿namespace RocketseatAuction.Api.Communication.Requests
 {
     public class RequestCreateOfferJson
     {

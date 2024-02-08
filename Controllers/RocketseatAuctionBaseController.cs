@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace RocketseatAuction.Controllers
+namespace RocketseatAuction.Api.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class RocketseatAuctionBaseController : ControllerBase {}
+    public class RocketseatAuctionBaseController : ControllerBase { }
 }

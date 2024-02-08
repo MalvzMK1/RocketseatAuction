@@ -1,26 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RocketseatAuction.Entities;
-using RocketseatAuction.Filters;
-using RocketseatAuction.UseCases.Items.Get;
+using RocketseatAuction.Api.Filters;
+using RocketseatAuction.Api.UseCases.Offers.Create;
 
-namespace RocketseatAuction.Controllers
+namespace RocketseatAuction.Api.Controllers
 {
     public class OfferController : RocketseatAuctionBaseController
     {
+        private readonly CreateOfferUseCase _createOfferUseCase;
+
+        public OfferController(CreateOfferUseCase createOfferUseCase)
+        {
+            _createOfferUseCase = createOfferUseCase;
+        }
+
         [HttpPost("{itemId}")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ServiceFilter(typeof(AuthenticationUserAttribute))]
         public IActionResult CreateOffer([FromRoute] int itemId)
         {
-            var useCase = new GetItemUseCase();
-
-            Item? item = useCase.Execute(itemId);
-
-            if (item is null)
-                return NotFound();
-
-            return Created();
+            return Ok();
         }
     }
 }

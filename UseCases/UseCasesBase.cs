@@ -1,6 +1,6 @@
-﻿using RocketseatAuction.Repositories;
+﻿using RocketseatAuction.Api.Repositories;
 
-namespace RocketseatAuction.UseCases
+namespace RocketseatAuction.Api.UseCases
 {
     public class UseCasesBase
     {

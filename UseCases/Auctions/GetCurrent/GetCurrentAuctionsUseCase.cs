@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RocketseatAuction.Entities;
+using RocketseatAuction.Api.Entities;
 
-namespace RocketseatAuction.UseCases.Auctions.GetCurrent
+namespace RocketseatAuction.Api.UseCases.Auctions.GetCurrent
 {
     public class GetCurrentAuctionsUseCase : UseCasesBase
     {

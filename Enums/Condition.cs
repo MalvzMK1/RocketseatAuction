@@ -1,4 +1,4 @@
-﻿namespace RocketseatAuction.Enums
+﻿namespace RocketseatAuction.Api.Enums
 {
     public enum Condition
     {

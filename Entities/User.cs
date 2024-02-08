@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RocketseatAuction.Entities
+namespace RocketseatAuction.Api.Entities
 {
     [Table("Users")]
     public class User

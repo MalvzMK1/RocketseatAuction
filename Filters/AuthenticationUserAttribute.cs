@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using RocketseatAuction.Repositories;
+using RocketseatAuction.Api.Repositories;
 
-namespace RocketseatAuction.Filters
+namespace RocketseatAuction.Api.Filters
 {
     public class AuthenticationUserAttribute : AuthorizeAttribute, IAuthorizationFilter
     {
@@ -22,7 +21,8 @@ namespace RocketseatAuction.Filters
 
                 if (!exist)
                     context.Result = new UnauthorizedObjectResult("Invalid access token");
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 context.Result = new UnauthorizedObjectResult(ex.Message);
             }

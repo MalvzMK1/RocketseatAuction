@@ -1,6 +1,6 @@
-﻿using RocketseatAuction.Entities;
+﻿using RocketseatAuction.Api.Entities;
 
-namespace RocketseatAuction.UseCases.Items.Get
+namespace RocketseatAuction.Api.UseCases.Items.Get
 {
     public class GetItemUseCase : UseCasesBase
     {
