@@ -10,7 +10,7 @@ namespace RocketseatAuction.Api.UseCases.Offers.Create
         
         public CreateOfferUseCase(LoggedUser loggedUser) => _loggedUser = loggedUser;
 
-        public void Execute(int itemId, RequestCreateOfferJson request)
+        public int Execute(int itemId, RequestCreateOfferJson request)
         {
             User user = _loggedUser.User();
 
@@ -26,6 +26,8 @@ namespace RocketseatAuction.Api.UseCases.Offers.Create
 
             // É preciso salvar para que realmente seja salvo no banco de dados
             repository.SaveChanges();
+
+            return offer.Id;
         }
     }
 }
